@@ -46,10 +46,10 @@ If your site uses **Google Fonts**, **Mixpanel**, a custom API at **custom-api.l
 ENV.contentSecurityPolicy = {
   'default-src': "'none'",
   'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
-  'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+  'font-src': "'self' https://fonts.gstatic.com", // Allow fonts to be loaded from https://fonts.gstatic.com
   'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
   'img-src': "'self'",
-  'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
+  'style-src': "'self' 'unsafe-inline' https://fonts.googleapis.com", // Allow inline styles and loaded CSS from https://fonts.googleapis.com 
   'media-src': "'self'"
 }
 ```
